@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+% setting lainnya
+\usepackage{mystyles}
+
+\title{Pembahasan Soal Tutorial PDP Bab 2 \\
+Tahun Ajaran 2024/2025 Semester Genap}
+\author{Asisten dosen: Citius Vienny}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+%Semua berkas atau \textit{file} responsi bisa diakses melalui folder Google Drive berikut: \\
+%\href{https://bit.ly/RespoAljabar2024Ganjil}{Responsi Aljabar TA 2024/2025 Ganjil} \\
+%\url{https://bit.ly/RespoAljabar2024Ganjil} \\
+
+\noindent
+\textbf{Soal bahasan:}
+\begin{enumerate}  
+\item Tunjukkanlah bahwa \( u(x,y) = \ln \sqrt{x^2 + y^2} \) memenuhi bentuk umum persamaan Laplace untuk semua \((x,y) \neq (0,0)\).  
+
+\item Tentukanlah fungsi \( u = u(x,t) \) yang memenuhi  
+\begin{align*}  
+u_{xx} &= 0, \quad 0 < x < 1, \, t > 0, \\  
+u(0,t) &= t^2, \quad u(1,t) = 1, \, t > 0.  
+\end{align*}  
+
+\item Tunjukkan bahwa persamaan \( u_t = u_{xx} + u_x \) dapat direduksi menjadi persamaan panas dengan menggunakan permisalan \( w = e^{u} \).  
+
+\item Tentukanlah solusi dari  
+\[  
+2u_{xx} - 4u_{xt} + u_x = 0,  
+\]  
+dalam bentuk dua fungsi sebarang.  
+
+\item Klasifikasikan Persamaan Differensial Parsial berikut:  
+\[  
+u_{xx} - 6u_{xy} + 12u_{yy} = 0,  
+\]  
+lalu tentukanlah permisalan yang tepat untuk merubah persamaan di atas menjadi persamaan Laplace.  
+
+\item Klasifikasikanlah Persamaan Differensial Parsial (PDP) berikut:  
+\[  
+u_{xx} + 2ku_{xt} + k^2 u_{tt} = 0, \quad k \neq 0,  
+\]  
+kemudian tentukanlah transformasi \(\xi = x + bt\), \(\tau = x + dt\) dari variabel independent yang dapat mentransformasikan persamaan tersebut menjadi persamaan sederhana dalam bentuk \( U_{\xi\xi} = 0 \). Tentukan juga solusi untuk persamaan yang diberikan dalam bentuk dua fungsi sebarang.  
+
+\item Selesaikanlah masalah berikut:  
+\begin{enumerate}  
+\item  
+\begin{align*}  
+u_t + xu_x &= -tu, \quad t > 0, \\  
+u(x,0) &= f(x), \quad x \in \mathbb{R}.  
+\end{align*}  
+\item  
+\begin{align*}  
+u_t + u_x &= -tu, \quad t > 0, \\  
+u(x,0) &= f(x), \quad x \in \mathbb{R}.  
+\end{align*}  
+\end{enumerate}  
+
+\item Tentukanlah solusi umum dari persamaan:  
+\[  
+u_t + cu_x = f(x)u.  
+\]  
+Solusi Anda boleh mengandung integral.  
+
+\item Misalkan \( u = u(x,t) \) memenuhi:  
+\begin{align*}  
+u_t &= ku_{xx}, \quad 0 < x < l, \, t > 0, \\  
+u(0,t) &= u(l,t) = 0, \quad t > 0, \\  
+u(x,0) &= u_0(x), \quad 0 \leq x \leq l.  
+\end{align*}  
+Tunjukkan bahwa  
+\[  
+\int_0^l u(x,t)^2 \, dx \leq \int_0^l u_0(x)^2 \, dx, \quad t > 0.  
+\]  
+
+\item Persamaan panas pada suatu batang logam dengan sumber panas sebesar satu satuan diberikan oleh:  
+\begin{align*}  
+u_t &= ku_{xx} + 1, \quad 0 < x < 1, \, t > 0, \\  
+u(0,t) &= 1, \quad u(1,t) = 1, \quad t > 0.  
+\end{align*}  
+Tentukanlah temperaturnya saat kondisi setimbang. Apakah nilai awalnya berpengaruh?  
+\end{enumerate}
+\end{document}

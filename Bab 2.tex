@@ -1,0 +1,134 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+% setting lainnya
+\usepackage{mystyles}
+
+\title{Pembahasan Soal Tutorial PDP Bab 2 \\
+Tahun Ajaran 2024/2025 Semester Genap}
+\author{Asisten dosen: Citius Vienny}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+%Semua berkas atau \textit{file} responsi bisa diakses melalui folder Google Drive berikut: \\
+%\href{https://bit.ly/RespoAljabar2024Ganjil}{Responsi Aljabar TA 2024/2025 Ganjil} \\
+%\url{https://bit.ly/RespoAljabar2024Ganjil} \\
+
+\noindent
+\textbf{Soal bahasan:}
+\begin{enumerate}
+    \item Selesaikanlah masalah cauchy
+\begin{align*}
+u_t &= ku_{xx}, x \in \mathbb{R}, t > 0 \\
+u\left(x,0\right) &= \phi\var{x}, x \in \mathbb{R}
+\end{align*}
+untuk masalah nilai awal berikut ini:
+\begin{enumerate}
+\item $\phi(x) = 1$ jika $|x| < 1$ dan $\phi(x) = 0$ jika $|x| > 1$
+\item $\phi(x) = e^{-x}$ jika $x > 0$ dan $\phi(x) = 0$ jika $x < 0$.
+\end{enumerate}
+
+\textbf{Pembahasan:} \\
+Perhatikan bahwa pada tiap nilai awal yang diberikan, $\phi\var{x}$ hanya tidak kontinu pada titik tertentu dan terbatas. Maka dapat digunakan teorema berikut
+
+\textbf{Teorema Masalah Cauchy Heat Equation}
+Misalkan masalah nilai awal untuk persamaan panas sebagai berikut,
+\begin{align*}
+u_t &= ku_{xx}, x \in \mathbb{R}, t > 0 \\
+u\left(x,0\right) &= \phi\var{x}, x \in \mathbb{R}
+\end{align*}
+dengan $\phi$ adalah fungsi kontinu terbatas di $\mathbb{R}$. Maka \[  
+u(x, t) = \int_{-\infty}^{\infty} \phi(y) \frac{1}{\sqrt{4 \pi kt}} e^{-\frac{(x-y)^2}{4kt}} \, dy  
+\]
+
+\item Misalkan masalah Cauchy untuk persamaan panas
+\begin{align*}
+u_t &= k u_{xx}, \quad x \in \mathbb{R}, \, t > 0, \\
+u(x, 0) &= \exp(-x), \quad x \in \mathbb{R}.
+\end{align*}
+Tunjukkanlah bahwa \( u(x, t) = \exp(-x + kt) \) merupakan solusi persamaan di atas dan merupakan solusi yang tak terbatas. Apakah hal ini kontradiksi terhadap pernyataan Teorema berikut ini:
+
+\textbf{Misalkan diberikan masalah nilai awal untuk persamaan panas:  
+\begin{align*}  
+u_t &= k u_{xx}, \quad x \in \mathbb{R}, \, t > 0, \\  
+u(x, 0) &= \phi(x), \quad x \in \mathbb{R}.  
+\end{align*}  
+di mana \(\phi\) adalah suatu fungsi kontinu dan terbatas di \(\mathbb{R}\). Maka:  
+\[  
+u(x, t) = \int_{-\infty}^{\infty} \phi(y) \frac{1}{\sqrt{4 \pi kt}} e^{-\frac{(x-y)^2}{4kt}} \, dy  
+\]  
+adalah solusi dari masalah persamaan panas di atas untuk \(x \in \mathbb{R}, \, t > 0\).}
+
+\item  Diberikan persamaan gelombang untuk suatu senar gitar  
+\[
+u_{tt} = c^2 u_{xx}.
+\]  
+\begin{enumerate}
+\item Tentukanlah solusi eksak dari masalah Cauchy untuk \( c = 2 \), \textit{initial displacement} \( f(x) = 0 \), dan kecepatan awal \( g(x) = \frac{1}{1+0.25x^2} \). Gambarkan solusinya.  
+\item Berikan penjelasan apa yang terjadi terhadap solusinya jika diberikan simpangan awal pada senar \( (f \neq 0) \).  
+\item Berikan penjelasan terkait perbedaan solusi saat \( f \neq 0 \) dan \( g = 0 \) dengan solusi saat \( f = 0, g \neq 0 \).  
+\end{enumerate}
+
+\item Selesaikanlah masalah Cauchy:  
+\begin{align*}
+u_{tt} - c^2 u_{xx} &= 0, \quad x \in \mathbb{R}, \, t > 0, \\
+u(x, 0) &= \exp(-|x|), \\
+u_t(x, 0) &= \cos x, \quad x \in \mathbb{R}.
+\end{align*}  
+Gunakanlah software untuk menggambarkan profil solusinya untuk \( t = 1, 2, 3 \). Gunakan nilai \( c = 1 \) dan \( c = 2 \).  
+
+\item Dengan menggunakan  
+\[
+u(x, t) = 1 + \frac{1}{n} e^{n^2 t} \sin nx,
+\]  
+untuk bilangan bulat \( n \) yang besar, tunjukkan-lah bahwa masalah Cauchy dari persamaan difusi mundur:  
+\begin{align*}
+u_t + u_{xx} &= 0, \quad x \in \mathbb{R}, \quad t > 0, \\
+u(x, 0) &= f(x), \quad x \in \mathbb{R},
+\end{align*}  
+bersifat tidak stabil.
+
+\item Misalkan \( u = u(x, y) \). Apakah permasalahan:  
+\[
+u_{xy} = 0, \quad 0 < x < 1, \quad 0 < y < 1
+\]  
+pada suatu unit persegi satuan di kuadran 1, di mana \( u \) ditentukan di perbatasan persegi, merupakan masalah well posed? Berikan penjelasan anda.
+
+\item Tentukanlah solusi dari masalah:  
+\begin{align*}
+u_t &= k u_{xx}, \quad x > 0, \, t > 0, \\
+u(0, t) &= 0, \quad t > 0, \\
+u(x, 0) &= 1, \quad x > 0.
+\end{align*}  
+Gambarkanlah solusinya saat \( k = 0.5, 0.75 \) dan 1. Berikan penjelasan anda.
+
+\item Tentukanlah solusi dari:  
+\begin{align*}
+u_t + 2u_x &= x \exp(-t), \quad x \in \mathbb{R}, \, t > 0, \\
+u(x, 0) &= 0, \quad x \in \mathbb{R}.
+\end{align*}
+
+\item Diberikan masalah nilai awal tak-homogen berbentuk:  
+\begin{align*}
+u_{tt} + 4u &= te^{-t}, \\
+u(0) &= 0, \\
+u_t(0) &= 0.
+\end{align*}  
+\begin{enumerate}
+\item Gunakan prinsip Duhamel untuk menentukan solusi masalah di atas.  
+\item Gunakanlah transformasi Laplace untuk memverifikasi solusi anda.  
+\end{enumerate}
+
+\item Gunakanlah Transformasi Laplace untuk menyelesaikan masalah nilai awal berbentuk:  
+\begin{align*}
+u_t &= u_{xx}, \quad x > 0, \, t > 0, \\
+u_x(0, t) - u(0, t) &= 0, \quad t > 0, \\
+u(x, 0) &= u_0, \quad x > 0.
+\end{align*}  
+Berikan deskripsi fisis dari solusi anda dalam konteks model persamaan panas.  
+
+\end{enumerate}
+\end{document}
