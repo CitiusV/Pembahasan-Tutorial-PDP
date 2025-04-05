@@ -31,19 +31,6 @@ untuk masalah nilai awal berikut ini:
 \item $\phi(x) = e^{-x}$ jika $x > 0$ dan $\phi(x) = 0$ jika $x < 0$.
 \end{enumerate}
 
-\textbf{Pembahasan:} \\
-Perhatikan bahwa pada tiap nilai awal yang diberikan, $\phi\var{x}$ hanya tidak kontinu pada titik tertentu dan terbatas. Maka dapat digunakan teorema berikut
-
-\textbf{Teorema Masalah Cauchy Heat Equation}
-Misalkan masalah nilai awal untuk persamaan panas sebagai berikut,
-\begin{align*}
-u_t &= ku_{xx}, x \in \mathbb{R}, t > 0 \\
-u\left(x,0\right) &= \phi\var{x}, x \in \mathbb{R}
-\end{align*}
-dengan $\phi$ adalah fungsi kontinu terbatas di $\mathbb{R}$. Maka \[  
-u(x, t) = \int_{-\infty}^{\infty} \phi(y) \frac{1}{\sqrt{4 \pi kt}} e^{-\frac{(x-y)^2}{4kt}} \, dy  
-\]
-
 \item Misalkan masalah Cauchy untuk persamaan panas
 \begin{align*}
 u_t &= k u_{xx}, \quad x \in \mathbb{R}, \, t > 0, \\
